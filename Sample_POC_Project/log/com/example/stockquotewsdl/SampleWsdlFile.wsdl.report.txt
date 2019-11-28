@@ -1,0 +1,22 @@
+
+
+Importing file: C:\Users\1091803\Desktop\POC\SampleWsdlFile.wsdl
+
+Copying source WSDL SampleWsdlFile.wsdl to SampleWsdlFile.wsdl.
+The WSDL import will proceed with bindings StockQuoteSoapBinding.
+Creating wsdl schema document for file:///C:/Users/1091803/Desktop/POC/SampleWsdlFile.wsdl.
+Parsing wsdl binding {http://example.com/stockquote.wsdl}StockQuoteSoapBinding.
+Parsing wsdl binding input GetLastTradePrice.
+Parsing wsdl binding output GetLastTradePrice.
+Processing doc style for operation GetLastTradePrice.
+Populating WSDL schema SampleWsdlFile.xsd.
+Creating file SampleWsdlFile.xsd in the workspace.
+Creating file /Sample_POC_Project/SampleWsdlFile_InlineSchema1.xsd in the workspace.
+
+Elapsed time processing this message definition file: 0.583 seconds
+Number of warnings for this message definition file: 0
+
+
+Number of files processed: 1
+
+

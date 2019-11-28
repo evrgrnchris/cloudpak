@@ -1,0 +1,7 @@
+
+
+Importing file: C:\Users\1091803\Desktop\POC\SampleWsdlFile.wsdl
+
+Parsing wsdl binding {http://www.example.org/NewWSDLFile/}NewWSDLFileSOAP.
+Parsing wsdl binding input NewOperation.
+Parsing wsdl binding output NewOperation.
