@@ -724,3 +724,485 @@ java.lang.NullPointerException
 
 !ENTRY com.ibm.mq.runtime 4 0 2019-11-28 21:59:57.691
 !MESSAGE WebSphere MQ install location is not found.
+!SESSION 2019-11-29 14:33:00.766 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.fullversion=8.0.5.35 - pxa6480sr5fp35ifix-20190524_01(SR5 FP35+IJ15979)
+JRE 1.8.0 Linux amd64-64-Bit Compressed References 20190524_417294 (JIT enabled, AOT enabled)
+OpenJ9   - 321e430
+OMR      - 16b77d7
+IBM      - 72459d3
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-11-29 14:33:11.309
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY org.eclipse.ui 2 2 2019-11-29 14:33:16.178
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.adapter.c, page: com.ibm.adapter.c.ui.preferencepage.CPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2019-11-29 14:33:16.181
+!MESSAGE Invalid preference category path: com.ibm.debug.breakpoints.common.pref.tracepoint (bundle: com.ibm.debug.wsa, page: com.ibm.debug.wsa.WSATracepointPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2019-11-29 14:33:16.182
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.etools.cobol.preference.ui, page: com.ibm.etools.cobol.preference.ui.preferencepage.CobolPreferencePage)
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2019-11-29 14:33:16.665
+!MESSAGE 
+
+!ENTRY org.eclipse.pde.core 4 0 2019-11-29 14:33:17.803
+!MESSAGE The current target platform contains errors, open Window > Preferences > Plug-in Development > Target Platform for details.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems occurred getting the plug-ins in this container
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:617)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalModels(PluginModelManager.java:1093)
+	at com.ibm.etools.mft.uri.udn.UDNUtils.populateExternalModels(UDNUtils.java:115)
+	at com.ibm.etools.mft.uri.udn.UDNUtils.<clinit>(UDNUtils.java:97)
+	at com.ibm.etools.mft.uri.udn.UDNManager.isWorkspaceUDN(UDNManager.java:365)
+	at com.ibm.etools.mft.navigator.utils.VirtualFolderUtils.getVFType(VirtualFolderUtils.java:1728)
+	at com.ibm.etools.mft.navigator.utils.VirtualFolderUtils.internalGetObjectsInContainer(VirtualFolderUtils.java:2649)
+	at com.ibm.etools.mft.navigator.utils.VirtualFolderUtils.getObjectsInContainer(VirtualFolderUtils.java:2539)
+	at com.ibm.etools.mft.navigator.utils.VirtualFolderUtils.getAllObjectsInApplication(VirtualFolderUtils.java:2379)
+	at com.ibm.etools.mft.navigator.utils.VirtualFolderUtils.getProjectChildrenForApplicationOrLibraryProj(VirtualFolderUtils.java:788)
+	at com.ibm.etools.mft.navigator.utils.VirtualFolderUtils.getProjectChildrenForLibraryProj(VirtualFolderUtils.java:765)
+	at com.ibm.etools.mft.navigator.resource.factory.ResourceLibraryFactory.getProjectChildren(ResourceLibraryFactory.java:77)
+	at com.ibm.etools.mft.navigator.resource.viewer.ResourceTreeContentProvider.getProjectChildren(ResourceTreeContentProvider.java:638)
+	at com.ibm.etools.mft.navigator.resource.viewer.ResourceTreeContentProvider.getChildren(ResourceTreeContentProvider.java:311)
+	at com.ibm.etools.mft.navigator.resource.viewer.ResourceTreeContentProvider.hasChildren(ResourceTreeContentProvider.java:645)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.isExpandable(AbstractTreeViewer.java:2141)
+	at org.eclipse.jface.viewers.TreeViewer.isExpandable(TreeViewer.java:553)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.isExpandable(AbstractTreeViewer.java:2171)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.updatePlus(AbstractTreeViewer.java:2863)
+	at org.eclipse.jface.viewers.TreeViewer.updatePlus(TreeViewer.java:804)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createTreeItem(AbstractTreeViewer.java:844)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$1.run(AbstractTreeViewer.java:818)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:791)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(TreeViewer.java:611)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:762)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalInitializeTree(AbstractTreeViewer.java:1543)
+	at org.eclipse.jface.viewers.TreeViewer.internalInitializeTree(TreeViewer.java:790)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$5.run(AbstractTreeViewer.java:1527)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1436)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:366)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1397)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.inputChanged(AbstractTreeViewer.java:1519)
+	at org.eclipse.jface.viewers.ContentViewer.setInput(ContentViewer.java:292)
+	at org.eclipse.jface.viewers.StructuredViewer.setInput(StructuredViewer.java:1675)
+	at com.ibm.etools.mft.navigator.resource.viewer.ResourceTreeViewer.init(ResourceTreeViewer.java:1061)
+	at com.ibm.etools.mft.navigator.resource.viewer.NamespaceNavigator.createProjectsSection(NamespaceNavigator.java:1174)
+	at com.ibm.etools.mft.navigator.resource.viewer.NamespaceNavigator.createPartControl(NamespaceNavigator.java:478)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:141)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:156)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:327)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:888)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:869)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:120)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:337)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:258)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:104)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:127)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:983)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$6.run(PartRenderingEngine.java:547)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:531)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:69)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:983)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1246)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:678)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:49)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:77)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:678)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1078)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:677)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:587)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+Contains: File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.core.commands.source_3.6.101.v20171031-1549.jar
+Contains: File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.debug.ui.source_3.10.3.v20170707-1439.jar
+Contains: File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.e4.ui.workbench.renderers.swt.source_0.12.3.v20150602-1303.jar
+Contains: File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.e4.ui.workbench.source_1.2.3.v20160310-2155.jar
+Contains: File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.swt.gtk.linux.x86_64.source_3.103.2.v20160202-1447.jar
+Contains: File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.ui.ide.source_3.10.3.v20150417-1230.jar
+Contains: File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.ui.source_3.106.2.v20181109-0945.jar
+Contains: File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.ui.workbench.source_3.106.3.v20160310-2155.jar
+!SUBENTRY 1 org.eclipse.pde.core 4 0 2019-11-29 14:33:17.806
+!MESSAGE Problems occurred getting the plug-ins in this container
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2019-11-29 14:33:17.806
+!MESSAGE File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.core.commands.source_3.6.101.v20171031-1549.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2019-11-29 14:33:17.806
+!MESSAGE File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.debug.ui.source_3.10.3.v20170707-1439.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2019-11-29 14:33:17.806
+!MESSAGE File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.e4.ui.workbench.renderers.swt.source_0.12.3.v20150602-1303.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2019-11-29 14:33:17.806
+!MESSAGE File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.e4.ui.workbench.source_1.2.3.v20160310-2155.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2019-11-29 14:33:17.806
+!MESSAGE File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.swt.gtk.linux.x86_64.source_3.103.2.v20160202-1447.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2019-11-29 14:33:17.806
+!MESSAGE File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.ui.ide.source_3.10.3.v20150417-1230.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2019-11-29 14:33:17.806
+!MESSAGE File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.ui.source_3.106.2.v20181109-0945.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2019-11-29 14:33:17.806
+!MESSAGE File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.ui.workbench.source_3.106.3.v20160310-2155.jar
+
+!ENTRY org.eclipse.ui.workbench 4 2 2019-11-29 14:33:23.739
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.NullPointerException
+	at com.ibm.bpm.common.ui.ExpandPICatogeryAndSaveIDialogSettings.expandCategories(ExpandPICatogeryAndSaveIDialogSettings.java:44)
+	at com.ibm.bpm.common.ui.ExpandPICatogeryAndSaveIDialogSettings.earlyStartup(ExpandPICatogeryAndSaveIDialogSettings.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:89)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:67)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2796)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ui 4 4 2019-11-29 14:33:23.740
+!MESSAGE Unhandled Exception
+
+!ENTRY com.ibm.bpm.common.ui 4 0 2019-11-29 14:33:23.740
+!MESSAGE Unable to execute early startup code for an extension
+!STACK 0
+java.lang.NullPointerException
+	at com.ibm.bpm.common.ui.ExpandPICatogeryAndSaveIDialogSettings.expandCategories(ExpandPICatogeryAndSaveIDialogSettings.java:44)
+	at com.ibm.bpm.common.ui.ExpandPICatogeryAndSaveIDialogSettings.earlyStartup(ExpandPICatogeryAndSaveIDialogSettings.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:89)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:67)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2796)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.ibm.mq.runtime 1 0 2019-11-29 14:33:24.289
+!MESSAGE /opt/IBM/ace-11.0.0.6/ace mqsifindmqpath
+
+!ENTRY com.ibm.mq.runtime 1 0 2019-11-29 14:33:28.534
+!MESSAGE BIP8100I: Unable to detect an installation of IBM MQ 
+
+!ENTRY com.ibm.mq.runtime 4 0 2019-11-29 14:33:28.551
+!MESSAGE WebSphere MQ install location is not found.
+!SESSION 2019-12-12 12:43:33.687 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.fullversion=8.0.5.35 - pxa6480sr5fp35ifix-20190524_01(SR5 FP35+IJ15979)
+JRE 1.8.0 Linux amd64-64-Bit Compressed References 20190524_417294 (JIT enabled, AOT enabled)
+OpenJ9   - 321e430
+OMR      - 16b77d7
+IBM      - 72459d3
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-12-12 12:43:53.379
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY org.eclipse.ui 2 2 2019-12-12 12:44:03.994
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.adapter.c, page: com.ibm.adapter.c.ui.preferencepage.CPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2019-12-12 12:44:03.997
+!MESSAGE Invalid preference category path: com.ibm.debug.breakpoints.common.pref.tracepoint (bundle: com.ibm.debug.wsa, page: com.ibm.debug.wsa.WSATracepointPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2019-12-12 12:44:03.997
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.etools.cobol.preference.ui, page: com.ibm.etools.cobol.preference.ui.preferencepage.CobolPreferencePage)
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2019-12-12 12:44:05.184
+!MESSAGE 
+
+!ENTRY org.eclipse.pde.core 4 0 2019-12-12 12:44:29.083
+!MESSAGE The current target platform contains errors, open Window > Preferences > Plug-in Development > Target Platform for details.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems occurred getting the plug-ins in this container
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:617)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:525)
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalModels(PluginModelManager.java:1093)
+	at com.ibm.etools.mft.uri.udn.UDNUtils.populateExternalModels(UDNUtils.java:115)
+	at com.ibm.etools.mft.uri.udn.UDNUtils.<clinit>(UDNUtils.java:97)
+	at com.ibm.etools.mft.uri.udn.UDNManager.isWorkspaceUDN(UDNManager.java:365)
+	at com.ibm.etools.mft.navigator.utils.VirtualFolderUtils.getVFType(VirtualFolderUtils.java:1728)
+	at com.ibm.etools.mft.navigator.utils.VirtualFolderUtils.internalGetObjectsInContainer(VirtualFolderUtils.java:2649)
+	at com.ibm.etools.mft.navigator.utils.VirtualFolderUtils.getObjectsInContainer(VirtualFolderUtils.java:2539)
+	at com.ibm.etools.mft.navigator.utils.VirtualFolderUtils.getAllObjectsInApplication(VirtualFolderUtils.java:2379)
+	at com.ibm.etools.mft.navigator.utils.VirtualFolderUtils.getProjectChildrenForApplicationOrLibraryProj(VirtualFolderUtils.java:788)
+	at com.ibm.etools.mft.navigator.utils.VirtualFolderUtils.getProjectChildrenForLibraryProj(VirtualFolderUtils.java:765)
+	at com.ibm.etools.mft.navigator.resource.factory.ResourceLibraryFactory.getProjectChildren(ResourceLibraryFactory.java:77)
+	at com.ibm.etools.mft.navigator.resource.viewer.ResourceTreeContentProvider.getProjectChildren(ResourceTreeContentProvider.java:638)
+	at com.ibm.etools.mft.navigator.resource.viewer.ResourceTreeContentProvider.getChildren(ResourceTreeContentProvider.java:311)
+	at com.ibm.etools.mft.navigator.resource.viewer.ResourceTreeContentProvider.hasChildren(ResourceTreeContentProvider.java:645)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.isExpandable(AbstractTreeViewer.java:2141)
+	at org.eclipse.jface.viewers.TreeViewer.isExpandable(TreeViewer.java:553)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.isExpandable(AbstractTreeViewer.java:2171)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.updatePlus(AbstractTreeViewer.java:2863)
+	at org.eclipse.jface.viewers.TreeViewer.updatePlus(TreeViewer.java:804)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createTreeItem(AbstractTreeViewer.java:844)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$1.run(AbstractTreeViewer.java:818)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:791)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(TreeViewer.java:611)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:762)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalInitializeTree(AbstractTreeViewer.java:1543)
+	at org.eclipse.jface.viewers.TreeViewer.internalInitializeTree(TreeViewer.java:790)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$5.run(AbstractTreeViewer.java:1527)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1436)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:366)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1397)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.inputChanged(AbstractTreeViewer.java:1519)
+	at org.eclipse.jface.viewers.ContentViewer.setInput(ContentViewer.java:292)
+	at org.eclipse.jface.viewers.StructuredViewer.setInput(StructuredViewer.java:1675)
+	at com.ibm.etools.mft.navigator.resource.viewer.ResourceTreeViewer.init(ResourceTreeViewer.java:1061)
+	at com.ibm.etools.mft.navigator.resource.viewer.NamespaceNavigator.createProjectsSection(NamespaceNavigator.java:1174)
+	at com.ibm.etools.mft.navigator.resource.viewer.NamespaceNavigator.createPartControl(NamespaceNavigator.java:478)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:141)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:156)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:327)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:888)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:869)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:120)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:337)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:258)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:104)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:127)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:983)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$6.run(PartRenderingEngine.java:547)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:531)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:69)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:983)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1246)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:678)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:49)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:77)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:678)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1078)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:677)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:587)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+	at java.lang.reflect.Method.invoke(Method.java:508)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+Contains: File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.core.commands.source_3.6.101.v20171031-1549.jar
+Contains: File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.debug.ui.source_3.10.3.v20170707-1439.jar
+Contains: File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.e4.ui.workbench.renderers.swt.source_0.12.3.v20150602-1303.jar
+Contains: File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.e4.ui.workbench.source_1.2.3.v20160310-2155.jar
+Contains: File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.swt.gtk.linux.x86_64.source_3.103.2.v20160202-1447.jar
+Contains: File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.ui.ide.source_3.10.3.v20150417-1230.jar
+Contains: File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.ui.source_3.106.2.v20181109-0945.jar
+Contains: File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.ui.workbench.source_3.106.3.v20160310-2155.jar
+!SUBENTRY 1 org.eclipse.pde.core 4 0 2019-12-12 12:44:29.086
+!MESSAGE Problems occurred getting the plug-ins in this container
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2019-12-12 12:44:29.086
+!MESSAGE File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.core.commands.source_3.6.101.v20171031-1549.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2019-12-12 12:44:29.086
+!MESSAGE File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.debug.ui.source_3.10.3.v20170707-1439.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2019-12-12 12:44:29.086
+!MESSAGE File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.e4.ui.workbench.renderers.swt.source_0.12.3.v20150602-1303.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2019-12-12 12:44:29.086
+!MESSAGE File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.e4.ui.workbench.source_1.2.3.v20160310-2155.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2019-12-12 12:44:29.086
+!MESSAGE File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.swt.gtk.linux.x86_64.source_3.103.2.v20160202-1447.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2019-12-12 12:44:29.086
+!MESSAGE File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.ui.ide.source_3.10.3.v20150417-1230.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2019-12-12 12:44:29.086
+!MESSAGE File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.ui.source_3.106.2.v20181109-0945.jar
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2019-12-12 12:44:29.086
+!MESSAGE File does not exist: /opt/ibm/ace-11.0.0.6/tools/plugins/org.eclipse.ui.workbench.source_3.106.3.v20160310-2155.jar
+
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-12 12:44:38.049
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.NullPointerException
+	at com.ibm.bpm.common.ui.ExpandPICatogeryAndSaveIDialogSettings.expandCategories(ExpandPICatogeryAndSaveIDialogSettings.java:44)
+	at com.ibm.bpm.common.ui.ExpandPICatogeryAndSaveIDialogSettings.earlyStartup(ExpandPICatogeryAndSaveIDialogSettings.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:89)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:67)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2796)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ui 4 4 2019-12-12 12:44:38.050
+!MESSAGE Unhandled Exception
+
+!ENTRY com.ibm.bpm.common.ui 4 0 2019-12-12 12:44:38.050
+!MESSAGE Unable to execute early startup code for an extension
+!STACK 0
+java.lang.NullPointerException
+	at com.ibm.bpm.common.ui.ExpandPICatogeryAndSaveIDialogSettings.expandCategories(ExpandPICatogeryAndSaveIDialogSettings.java:44)
+	at com.ibm.bpm.common.ui.ExpandPICatogeryAndSaveIDialogSettings.earlyStartup(ExpandPICatogeryAndSaveIDialogSettings.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:89)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:67)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2796)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.ibm.mq.runtime 1 0 2019-12-12 12:44:39.178
+!MESSAGE /opt/IBM/ace-11.0.0.6/ace mqsifindmqpath
+
+!ENTRY com.ibm.mq.runtime 1 0 2019-12-12 12:44:44.819
+!MESSAGE BIP8100I: Unable to detect an installation of IBM MQ 
+
+!ENTRY com.ibm.mq.runtime 4 0 2019-12-12 12:44:44.851
+!MESSAGE WebSphere MQ install location is not found.

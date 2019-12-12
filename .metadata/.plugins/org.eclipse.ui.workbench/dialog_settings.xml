@@ -13,6 +13,7 @@
 		</list>
 	</section>
 	<section name="ImportExportAction">
+		<item value="com.ibm.bpm.common.ui.project.interchange.ProjectInterchangeExport" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
 		<item value="com.ibm.bpm.common.ui.project.interchange.ProjectInterchangeImport" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
