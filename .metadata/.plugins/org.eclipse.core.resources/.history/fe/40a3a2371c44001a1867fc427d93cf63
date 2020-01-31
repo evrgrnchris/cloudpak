@@ -23,8 +23,8 @@ CREATE COMPUTE MODULE Sample_WS_ProviderFlow_Compute
 		    SET OutRef.pnrStatus = pnrStatus;
 		    SET OutRef.TicketNumber = '1234567890';
 		    SET OutRef.PaymentInfo.PaymentStatus = 'Y';
-		    SET OutRef.Traveller.FirstName = 'JOHN';
-		    SET OutRef.Traveller.LastName = 'PARKER';
+		    SET OutRef.Traveller.FirstName = 'CHRIS';
+		    SET OutRef.Traveller.LastName = 'HEMBROM';
 		    SET OutRef.Traveller.Title = 'MR';
 		    SET OutRef.Itinerary.Departure.AirportCode = 'YUL';
 		    SET OutRef.Itinerary.Departure.Date = flightDate;

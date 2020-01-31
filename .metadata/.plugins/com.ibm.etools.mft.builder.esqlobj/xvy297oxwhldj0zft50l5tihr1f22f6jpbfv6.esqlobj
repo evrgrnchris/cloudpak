@@ -1,7 +1,4 @@
-
-
-CREATE COMPUTE MODULE Sample_WS_ProviderFlow_Compute
-	CREATE FUNCTION Main() RETURNS BOOLEAN
+/*EATE FUNCTION Main() RETURNS BOOLE*/
 	BEGIN
 		-- CALL CopyMessageHeaders();
 		 --CALL CopyEntireMessage();
@@ -50,4 +47,3 @@ CREATE COMPUTE MODULE Sample_WS_ProviderFlow_Compute
 	CREATE PROCEDURE CopyEntireMessage() BEGIN
 		SET OutputRoot = InputRoot;
 	END;
-END MODULE;
