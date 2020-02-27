@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><MessageBroker name="MQToFTP_lib">
+  <XSDCollection href="platform:/resource/MQToFTP_lib/PurchaseOrder.xsd" prefix="tns" targetNamespace="http://www.example.org/PurchaseOrder">
+    <element href="platform:/resource/MQToFTP_lib/PurchaseOrder.xsd#//purchaseOrder;XSDElementDeclaration" name="purchaseOrder" type="mlib://MQToFTP_lib#/-/complexType{http://www.example.org/PurchaseOrder}PurchaseOrderType"/>
+    <complexType baseType="mlib://MQToFTP_lib#/-/complexType{http://www.w3.org/2001/XMLSchema}anyType" href="platform:/resource/MQToFTP_lib/PurchaseOrder.xsd#//PurchaseOrderType;XSDComplexTypeDefinition" name="PurchaseOrderType"/>
+    <complexType baseType="mlib://MQToFTP_lib#/-/complexType{http://www.w3.org/2001/XMLSchema}anyType" href="platform:/resource/MQToFTP_lib/PurchaseOrder.xsd#//USAddress;XSDComplexTypeDefinition=1" name="USAddress"/>
+    <complexType baseType="mlib://MQToFTP_lib#/-/complexType{http://www.w3.org/2001/XMLSchema}anyType" href="platform:/resource/MQToFTP_lib/PurchaseOrder.xsd#//Items;XSDComplexTypeDefinition=2" name="Items"/>
+    <complexType baseType="mlib://MQToFTP_lib#/-/complexType{http://www.w3.org/2001/XMLSchema}anyType" href="platform:/resource/MQToFTP_lib/PurchaseOrder.xsd#//itemType;XSDComplexTypeDefinition=3" name="itemType"/>
+  </XSDCollection>
+</MessageBroker>

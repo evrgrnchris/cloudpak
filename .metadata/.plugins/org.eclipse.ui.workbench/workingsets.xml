@@ -3,5 +3,14 @@
 <workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1574951507283_1" label="[Sample_POC_Project]" name="[Sample_POC_Project]">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Sample_POC_Project" type="4"/>
 </workingSet>
+<workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1582018996044_2" label="[MQToFTP_FAF_App]" name="[MQToFTP_FAF_App]">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/MQToFTP_FAF_App" type="4"/>
+</workingSet>
+<workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1582018996051_3" label="[MQToFTP_lib]" name="[MQToFTP_lib]">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/MQToFTP_lib" type="4"/>
+</workingSet>
+<workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1582801290138_4" label="[DK_ESL_AUTO_AUTOINSURANCE]" name="[DK_ESL_AUTO_AUTOINSURANCE]">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DK_ESL_AUTO_AUTOINSURANCE" type="4"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1574950874547_0" label="Window Working Set" name="Aggregate for window 1574950874547"/>
 </workingSetManager>
